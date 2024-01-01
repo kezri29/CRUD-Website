@@ -1,0 +1,102 @@
+main.js
+  |
+  |
+  v
+.env --> port --> dbi_uri
+  |
+  |
+  v
+main.js --> normal app set up and server setup
+  |
+  |
+  v
+main.js --> database connection setup(mongoose)
+  |
+  |
+  v
+main.js --> middleware setup (urlencoded,session,json)
+  |
+  |
+  v
+main.js --> templating engine setup (ejs)
+  |
+  |
+  v
+routes,models --> routes.js,user.js
+  |
+  |
+  v
+user.js/models --> schema for database
+  |
+  |
+  v
+routes.js/routes --> setting up sample routes for app
+  |
+  |
+  v
+main.js --> setup the routes
+  |
+  |
+  v
+routes.js/models --> we are setting up the routes for home page (/)
+  |
+  |
+  v
+index.js/views --> created to hold html content of the homepage
+  |
+  |
+  v
+cdnjs --> import necessary files for bootstrap
+  |
+  |
+  v
+header,footer/layout --> create separate components 
+  |
+  |
+  v
+index.js --> add these components
+  |
+  |
+  v
+header,footer --> add navbar, footer
+  |
+  |
+  v
+add_users/views --> user form data in /add page
+  |
+  |
+  v
+index.js --> create table and insert sample data manually thru code
+  |
+  |
+  v
+routes.js --> import the user from models, multer, then write code for image upload(multer code)
+  |
+  |
+  v
+index.ejs --> imported data must be shown in th website
+  |
+  |
+  v
+footer.ejs --> datatable, pagination , jquery code
+  |
+  |
+  v
+routes.js --> set up / route (home page) in order to get the data from the database
+  |
+  |
+  v
+index.ejs,header.ejs --> setup necessary bootstrap and import bundles
+  |
+  |
+  v
+edit_user.js --> code for editing then implement in routes.js
+  |
+  |
+  v
+delete --> code for deleting then implement in routes.js
+  |
+  |
+  v
+create pages for about,contatc --> involve it in the routes.js
+
